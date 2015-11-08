@@ -1,6 +1,6 @@
 class: center,middle
 
-![Hey, Erlang](/images/hey_erlang.svg)
+![Hey, Erlang](images/hey_erlang.svg)
 # Pre-alpha [Kottans](http://kottans.org) courses
 
 ---
@@ -108,7 +108,7 @@ class: center,top
 ## Atom
 
 <p align="center">
-  <img src="/images/3_atom.svg" width="70%" height="70%"/>
+  <img src="images/3_atom.svg" width="70%" height="70%"/>
 </p>
 ---
 # Basic data types
@@ -166,7 +166,7 @@ class: center,top
 ## Tuple
 
 <p align="center">
-  <img src="/images/3_tuple.svg" height="70%" width="70%" />
+  <img src="images/3_tuple.svg" height="70%" width="70%" />
 </p>
 ---
 # Basic data types
@@ -230,7 +230,7 @@ class: center,top
 ## List
 
 <p align="center">
-  <img src="/images/3_list.svg" width="70%" height="70%" />
+  <img src="images/3_list.svg" width="70%" height="70%" />
 </p>
 ---
 # Basic data types
@@ -645,4 +645,4 @@ class: center,middle
 class: center,middle
 # Bye, folks!
 
-<img src="/images/1_joe_notebook.svg" alt="Joe with notebook" height="80%" width="80%" />
+<img src="images/1_joe_notebook.svg" alt="Joe with notebook" height="80%" width="80%" />

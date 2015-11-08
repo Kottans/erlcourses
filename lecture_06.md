@@ -1,6 +1,6 @@
 class: center, middle
 
-![Hey, Erlang](/images/hey_erlang.svg)
+![Hey, Erlang](images/hey_erlang.svg)
 # Pre-alpha [Kottans](http://kottans.org) courses
 ---
 class: center,middle
@@ -15,7 +15,7 @@ class: center
 # Erlang Make
 
 <p align="center">
-  <img src="/images/6_emake.svg" width="70%" height="70%" />
+  <img src="images/6_emake.svg" width="70%" height="70%" />
 </p>
 ---
 # Erlang Make
@@ -96,7 +96,7 @@ class: center
 #### Behaviors
 
 <p align="center">
-  <img src="/images/6_behaviour.svg" width="70%" height="70%" />
+  <img src="images/6_behaviour.svg" width="70%" height="70%" />
 </p>
 ---
 # OTP
@@ -322,4 +322,4 @@ class: center,middle
 class: center,middle
 # Bye, folks!
 
-<img src="/images/1_joe_notebook.svg" alt="Joe with notebook" height="80%" width="80%" />
+<img src="images/1_joe_notebook.svg" alt="Joe with notebook" height="80%" width="80%" />

@@ -1,6 +1,6 @@
 class: center,middle
 
-![Hey, Erlang](/images/hey_erlang.svg)
+![Hey, Erlang](images/hey_erlang.svg)
 # Pre-alpha [Kottans](http://kottans.org) courses
 
 ---
@@ -404,7 +404,7 @@ class: middle,center
 # The most important hotkey
 
 <p align="center">
-  <img src="/images/2_ctrl-g.svg" width="75%" height="75%"/>
+  <img src="images/2_ctrl-g.svg" width="75%" height="75%"/>
 </p>
 ---
 # ~~Ctrl-Z~~ Ctrl-G!
@@ -520,7 +520,7 @@ class: center,middle
 Kjell looks like this:
 
 <p align="center">
-  <img src="/images/2_kjell.png" width="95%" height="95%"/>
+  <img src="images/2_kjell.png" width="95%" height="95%"/>
 </p>
 
 Unfortunately, it needs [Powerline fonts](https://github.com/powerline/fonts) to work properly.
@@ -532,4 +532,4 @@ class: center,middle
 class: center,middle
 # Bye, folks!
 
-<img src="/images/1_joe_notebook.svg" alt="Joe with notebook" height="80%" width="80%" />
+<img src="images/1_joe_notebook.svg" alt="Joe with notebook" height="80%" width="80%" />

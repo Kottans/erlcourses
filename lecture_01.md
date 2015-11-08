@@ -1,6 +1,6 @@
 class: center,middle
 
-![Hey, Erlang](/images/hey_erlang.svg)
+![Hey, Erlang](images/hey_erlang.svg)
 # Pre-alpha [Kottans](http://kottans.org) courses
 
 ---
@@ -14,7 +14,7 @@ class: center,middle
 class: center
 # Meet Joe the Otter
 #### (and his powerful crab minions)
-<img src="/images/1_meet_joe.svg" alt="Joe and crab minions" height="80%" width="80%" />
+<img src="images/1_meet_joe.svg" alt="Joe and crab minions" height="80%" width="80%" />
 ---
 class: center,middle
 
@@ -196,4 +196,4 @@ class: center,middle
 class: center,middle
 # Bye, folks!
 
-<img src="/images/1_joe_notebook.svg" alt="Joe with notebook" height="80%" width="80%" />
+<img src="images/1_joe_notebook.svg" alt="Joe with notebook" height="80%" width="80%" />
