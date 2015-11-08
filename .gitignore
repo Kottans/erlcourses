@@ -2,3 +2,4 @@
 *.dump
 *.beam
 _site
+.jekyll-metadata
