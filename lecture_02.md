@@ -88,14 +88,14 @@ Eshell V6.4  (abort with ^G)
 
 * `erts` - Erlang Runtime System
 * `source` - has `ERLANG_GIT_VERSION` variable if Erlang was built from git source
-* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses half world heap
+* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses halfword heap
 ---
 # What does this mean?
 `Erlang/OTP 17 [erts-6.4] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]`
 
 * `erts` - Erlang Runtime System
 * `source` - has `ERLANG_GIT_VERSION` variable if Erlang was built from git source
-* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses half world heap
+* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses halfword heap
 * `smp:4:4` - appears on symmetric multiprocessor systems, first number shows total cores, second - online cores
 ---
 # What does this mean?
@@ -103,41 +103,41 @@ Eshell V6.4  (abort with ^G)
 
 * `erts` - Erlang Runtime System
 * `source` - has `ERLANG_GIT_VERSION` variable if Erlang was built from git source
-* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses half world heap
-* `smp:4:4` - appears on symmetric multiprocessor systems, first number shows total cores, second - online cores
-* `async-threads:10` - appears in case if Erlang uses threads, number means size of thread pool
----
-# What does this mean?
-`Erlang/OTP 17 [erts-6.4] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]`
-
-* `erts` - Erlang Runtime System
-* `source` - has `ERLANG_GIT_VERSION` variable if Erlang was built from git source
-* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses half world heap
+* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses halfword heap
 * `smp:4:4` - appears on symmetric multiprocessor systems, first number shows total cores, second - online cores
 * `async-threads:10` - appears in case if Erlang uses threads, number means size of thread pool
-* `hipe` - appears in case of usage HiPE. HiPE means High Performance Erlang, efficient Erlang compiler integrated into OTP
 ---
 # What does this mean?
 `Erlang/OTP 17 [erts-6.4] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]`
 
 * `erts` - Erlang Runtime System
 * `source` - has `ERLANG_GIT_VERSION` variable if Erlang was built from git source
-* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses half world heap
+* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses halfword heap
 * `smp:4:4` - appears on symmetric multiprocessor systems, first number shows total cores, second - online cores
 * `async-threads:10` - appears in case if Erlang uses threads, number means size of thread pool
 * `hipe` - appears in case of usage HiPE. HiPE means High Performance Erlang, efficient Erlang compiler integrated into OTP
-* `kernel-poll:false` - is Kernel Poll turned on or off. Kernel Poll used to improve performance if you have a number (hundreds or more) of simulanteus network connections
 ---
 # What does this mean?
 `Erlang/OTP 17 [erts-6.4] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]`
 
 * `erts` - Erlang Runtime System
 * `source` - has `ERLANG_GIT_VERSION` variable if Erlang was built from git source
-* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses half world heap
+* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses halfword heap
 * `smp:4:4` - appears on symmetric multiprocessor systems, first number shows total cores, second - online cores
 * `async-threads:10` - appears in case if Erlang uses threads, number means size of thread pool
 * `hipe` - appears in case of usage HiPE. HiPE means High Performance Erlang, efficient Erlang compiler integrated into OTP
-* `kernel-poll:false` - is Kernel Poll turned on or off. Kernel Poll used to improve performance if you have a number (hundreds or more) of simulanteus network connections
+* `kernel-poll:false` - is Kernel Poll turned on or off. Kernel Poll used to improve performance if you have a number (hundreds or more) of simultaneous network connections
+---
+# What does this mean?
+`Erlang/OTP 17 [erts-6.4] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]`
+
+* `erts` - Erlang Runtime System
+* `source` - has `ERLANG_GIT_VERSION` variable if Erlang was built from git source
+* `64-bit` - appears in case of 64-bit architecture and adds `halfword` if uses halfword heap
+* `smp:4:4` - appears on symmetric multiprocessor systems, first number shows total cores, second - online cores
+* `async-threads:10` - appears in case if Erlang uses threads, number means size of thread pool
+* `hipe` - appears in case of usage HiPE. HiPE means High Performance Erlang, efficient Erlang compiler integrated into OTP
+* `kernel-poll:false` - is Kernel Poll turned on or off. Kernel Poll used to improve performance if you have a number (hundreds or more) of simultaneous network connections
 * `dtrace` - support of DTrace dynamic tracing framework for BEAM
 ---
 # Launch flags
@@ -161,14 +161,14 @@ If you are using emulator flags they influence the way Erlang virtual machine wo
 
 If you are using emulator flags they influence the way Erlang virtual machine works.
 * `+A size` - number of threads in async thread pool
-* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump became useless
+* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump becomes useless
 ---
 # Launch flags
 ### Emulator flags (some of them)
 
 If you are using emulator flags they influence the way Erlang virtual machine works.
 * `+A size` - number of threads in async thread pool
-* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump became useless
+* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump becomes useless
 * `+L` - don't load information about source file names and line numbers. Exceptions will become useless, but used memory amount will became less
 ---
 # Launch flags
@@ -176,7 +176,7 @@ If you are using emulator flags they influence the way Erlang virtual machine wo
 
 If you are using emulator flags they influence the way Erlang virtual machine works.
 * `+A size` - number of threads in async thread pool
-* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump became useless
+* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump becomes useless
 * `+L` - don't load information about source file names and line numbers. Exceptions will become useless, but used memory amount will became less
 * `+pc Range` - range of characters used for heuristic string detection. Can be `latin1` or `unicode`
 ---
@@ -185,7 +185,7 @@ If you are using emulator flags they influence the way Erlang virtual machine wo
 
 If you are using emulator flags they influence the way Erlang virtual machine works.
 * `+A size` - number of threads in async thread pool
-* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump became useless
+* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump becomes useless
 * `+L` - don't load information about source file names and line numbers. Exceptions will become useless, but used memory amount will became less
 * `+pc Range` - range of characters used for heuristic string detection. Can be `latin1` or `unicode`
 * `+R ReleaseNumber` - compatibility mode
@@ -195,7 +195,7 @@ If you are using emulator flags they influence the way Erlang virtual machine wo
 
 If you are using emulator flags they influence the way Erlang virtual machine works.
 * `+A size` - number of threads in async thread pool
-* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump became useless
+* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump becomes useless
 * `+L` - don't load information about source file names and line numbers. Exceptions will become useless, but used memory amount will became less
 * `+pc Range` - range of characters used for heuristic string detection. Can be `latin1` or `unicode`
 * `+R ReleaseNumber` - compatibility mode
@@ -206,7 +206,7 @@ If you are using emulator flags they influence the way Erlang virtual machine wo
 
 If you are using emulator flags they influence the way Erlang virtual machine works.
 * `+A size` - number of threads in async thread pool
-* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump became useless
+* `+d` - generate only core dump without crash dump. Crash dump destroys process heaps so core dump becomes useless
 * `+L` - don't load information about source file names and line numbers. Exceptions will become useless, but used memory amount will became less
 * `+pc Range` - range of characters used for heuristic string detection. Can be `latin1` or `unicode`
 * `+R ReleaseNumber` - compatibility mode
