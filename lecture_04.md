@@ -250,7 +250,7 @@ class: center,middle
 # Modules
 ## Macros
 
-Macro is an special instruction for compiler. They can be user-defined or predefined.
+Macro is a special instruction for compiler. It can be user-defined or predefined.
 
 ```erlang
 -define(Const, Replacement). % Const will be replaced in time of compiling with Replacement value
@@ -262,14 +262,14 @@ Macro is an special instruction for compiler. They can be user-defined or predef
 # Modules
 ## Macros
 
-Macro is an special instruction for compiler. They can be user-defined or predefined.
+Macro is a special instruction for compiler. It can be user-defined or predefined.
 
 * `?MODULE` - atom name of current module
 ---
 # Modules
 ## Macros
 
-Macro is an special instruction for compiler. They can be user-defined or predefined.
+Macro is a special instruction for compiler. It can be user-defined or predefined.
 
 * `?MODULE` - atom name of current module
 * `?MODULE_STRING` - string name of current module
@@ -277,7 +277,7 @@ Macro is an special instruction for compiler. They can be user-defined or predef
 # Modules
 ## Macros
 
-Macro is an special instruction for compiler. They can be user-defined or predefined.
+Macro is a special instruction for compiler. It can be user-defined or predefined.
 
 * `?MODULE` - atom name of current module
 * `?MODULE_STRING` - string name of current module
@@ -286,7 +286,7 @@ Macro is an special instruction for compiler. They can be user-defined or predef
 # Modules
 ## Macros
 
-Macro is an special instruction for compiler. They can be user-defined or predefined.
+Macro is a special instruction for compiler. It can be user-defined or predefined.
 
 * `?MODULE` - atom name of current module
 * `?MODULE_STRING` - string name of current module
@@ -296,7 +296,7 @@ Macro is an special instruction for compiler. They can be user-defined or predef
 # Modules
 ## Macros
 
-Macro is an special instruction for compiler. They can be user-defined or predefined.
+Macro is a special instruction for compiler. It can be user-defined or predefined.
 
 * `?MODULE` - atom name of current module
 * `?MODULE_STRING` - string name of current module
@@ -404,7 +404,7 @@ class: center,middle
 
 * `==` - equal to
 * `/=` - not equal to
-* `=<` - less than
+* `=<` - less than or equal to
 ---
 # Comparison
 
