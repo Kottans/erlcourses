@@ -109,7 +109,7 @@ class: center,middle
 # Processes
 ## Spawn
 
-Let's spawn some processes. This is `hello_server.erl`, our precisious server.
+Let's spawn some processes. This is `hello_server.erl`, our precious server.
 
 ```erlang
 -module(hello_server).
@@ -145,7 +145,7 @@ Total                                                      40075 43316007    1
 # Processes
 ## Spawn
 
-Spawn knows about other nodes. You can spawn function on other node. 
+Spawn knows about the other nodes. You can spawn function on other node. 
 
 Launch node 1:
 ```shell
@@ -159,7 +159,7 @@ node2> erl -sname node2 -setcookie secret
 # Processes
 ## Spawn
 
-Spawn knows about other nodes. You can spawn function on other node. 
+Spawn knows about the other nodes. You can spawn function on other node. 
 
 On node1:
 ```erlang-repl
@@ -230,7 +230,7 @@ class: center,middle
 # Processes
 ## Messages (receiving)
 
-So we need not only receive messages but also receive them. We can do it by tricky way like
+So we need not only to send messages but also to receive them. We can do it by a tricky way like this:
 
 ```erlang
 Mailbox = process_info(self(), messages),
@@ -240,7 +240,7 @@ Mailbox = process_info(self(), messages),
 # Processes
 ## Messages (receiving)
 
-But on last lecture we have learnt less tricky way, the glorious `receive` function. So let's create `com_server.erl`
+But on the last lecture we have learnt a less tricky way, the glorious `receive` function. So let's create `com_server.erl`:
 
 ```erlang
 -module(com_server).
@@ -259,14 +259,14 @@ listen() ->
   end.
 ```
 
-This will create listen loop.
+This will create a listen loop.
 
 *Special note*. Can you find more DRY way to do this?
 ---
 # Processes
 ## Messages (receiving)
 
-Let's try spawn our process and send message to it.
+Let's try to spawn our process and send a message to it.
 
 ```erlang-repl
 1> c(com_server).
@@ -290,7 +290,7 @@ In general there are two ways to do this - normal and with exception.
 # Processes
 ## Terminating (suicide)
 
-In general there are two ways to do this - normal and with exception.
+In general there are two ways to do this &mdash; with or without exception.
 
 ```erlang
 -module(crash_server).
@@ -323,7 +323,7 @@ class: center,middle
 # Processes
 ## Selective receive
 
-Sometimes you need to pass some of messages first and all other after. This is the way how it's implemented in `selective.erl`
+Sometimes you need to pass some messages before the others. This is the way how it's implemented in `selective.erl`
 
 ```erlang
 -module(selective).
@@ -349,7 +349,7 @@ normal() ->
 # Processes
 ## Selective receive
 
-Let's take a look, how it works.
+Let's take a look at how it works.
 
 ```erlang-repl
 1> c(selective).
@@ -400,14 +400,14 @@ ping(N) ->
       io:format("Ping received pong~n", [])
   end,
   ping(N - 1).
-% continued on next page
+% continued on the next page
 ```
 ---
 # Processes
 ##### Registered processes
 
 ```erlang
-% beginning on previous page
+% beginning on the previous page
 pong() ->
   receive
     finished ->
@@ -427,7 +427,7 @@ start() ->
 # Processes
 ## Registered processes
 
-Let's test them in shell.
+Let's test them in the shell.
 
 ```erlang-repl
 1> c(registered).
@@ -459,7 +459,7 @@ Sometimes it's needed to know when your spawned process crashed. That's why proc
 # Processes
 ## Linked processes
 
-Sometimes it's needed to know when your spawned process crashed. That's why process links exists. Take a look at module `linked.erl`
+Sometimes it's needed to know when your spawned process crashed. That's why process links exist. Take a look at module `linked.erl`
 
 ```erlang
 -module(linked).
@@ -492,7 +492,7 @@ true
 ** exception error: "chain dies here"
 ```
 
-What happened here? `chain(3)` linked `chain(2)`, `chain(2)` linked `chain(1)`, `chain(1)` linked `chain(0)`. `chain(0)` received timeout and throwed exception. It was populated upper and upper because of link, so all chains died up to shell. Shell was restarted by supervisor.
+What happened here? `chain(3)` linked `chain(2)`, `chain(2)` linked `chain(1)`, `chain(1)` linked `chain(0)`. `chain(0)` received timeout and threw an exception. It was populated upper and upper because of the link, so all chains died up to shell. Shell was restarted by supervisor.
 ---
 class: center,middle
 # End of Lecture 5
