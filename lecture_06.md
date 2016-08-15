@@ -22,7 +22,7 @@ class: center
 ---
 # Erlang Make
 
-Erlang has it's own builtin tool for making applications and/or modules. It works with globs and can pass compile options to compiler. Take a look at sample `Emakefile` in `app_1` folder (don't forget to take a look at `app_1` structure)
+Erlang has it's own built-in tool for making applications and/or modules. It works with globs and can pass compile options to compiler. Take a look at sample `Emakefile` in `app_1` folder (don't forget to take a look at `app_1` structure)
 
 ```erlang
 % Emakefile
@@ -34,7 +34,7 @@ Erlang has it's own builtin tool for making applications and/or modules. It work
 }.
 ```
 
-This is the one of easiest sample to compile your Erlang application. Let's take a closer look at some selected compiler options you may need.
+This is the one of the easiest sample to compile your Erlang application. Let's take a closer look at some selected compiler options you may need.
 ---
 # Erlang Make
 #### Compiler options
@@ -42,34 +42,34 @@ This is the one of easiest sample to compile your Erlang application. Let's take
 # Erlang Make
 #### Compiler options
 
-* `compressed` - makes compressed BEAM, useful for embedded systems
+* `compressed` - compress the BEAM, useful for embedded systems
 ---
 # Erlang Make
 #### Compiler options
 
-* `compressed` - makes compressed BEAM, useful for embedded systems
-* `debug_info` - includes debug information into BEAM module which allows to connect debugger
+* `compressed` - compress the BEAM, useful for embedded systems
+* `debug_info` - include the debug information in the BEAM module which allows to connect debugger
 ---
 # Erlang Make
 #### Compiler options
 
-* `compressed` - makes compressed BEAM, useful for embedded systems
-* `debug_info` - includes debug information into BEAM module which allows to connect debugger
+* `compressed` - compress the BEAM, useful for embedded systems
+* `debug_info` - include the debug information in the BEAM module which allows to connect debugger
 * `report` - print errors and warnings
 ---
 # Erlang Make
 #### Compiler options
 
-* `compressed` - makes compressed BEAM, useful for embedded systems
-* `debug_info` - includes debug information into BEAM module which allows to connect debugger
+* `compressed` - compress the BEAM, useful for embedded systems
+* `debug_info` - include the debug information in the BEAM module which allows to connect debugger
 * `report` - print errors and warnings
 * `verbose` - verbose mode
 ---
 # Erlang Make
 #### Compiler options
 
-* `compressed` - makes compressed BEAM, useful for embedded systems
-* `debug_info` - includes debug information into BEAM module which allows to connect debugger
+* `compressed` - compress the BEAM, useful for embedded systems
+* `debug_info` - include the debug information in the BEAM module which allows to connect debugger
 * `report` - print errors and warnings
 * `verbose` - verbose mode
 * `{i, Dir}` - include search path, `Dir` is a list
@@ -77,8 +77,8 @@ This is the one of easiest sample to compile your Erlang application. Let's take
 # Erlang Make
 #### Compiler options
 
-* `compressed` - makes compressed BEAM, useful for embedded systems
-* `debug_info` - includes debug information into BEAM module which allows to connect debugger
+* `compressed` - compress the BEAM, useful for embedded systems
+* `debug_info` - include the debug information in the BEAM module which allows to connect debugger
 * `report` - print errors and warnings
 * `verbose` - verbose mode
 * `{i, Dir}` - include search path, `Dir` is a list
@@ -105,12 +105,12 @@ class: center
 # OTP
 ## Behaviors
 
-Behaviors is Erlang way to force module to implement some general interface. When you are going to create library or application that will be used outside with associated callbacks - behaviour is the best way to do this. Take a closer look about defining your own behaviour:
+Behaviors is the Erlang way to force module to implement some general interface. When you are going to create library or application that will be used outside with associated callbacks - behaviour is the best way to do this. Take a closer look at defining your own behaviour:
 ---
 # OTP
 ## Behaviors
 
-Behaviors is Erlang way to force module to implement some general interface. When you are going to create library or application that will be used outside with associated callbacks - behaviour is the best way to do this. Take a closer look about defining your own behaviour:
+Behaviors is the Erlang way to force module to implement some general interface. When you are going to create library or application that will be used outside with associated callbacks - behaviour is the best way to do this. Take a closer look at defining your own behaviour:
 
 ```erlang
 % gen_foo.erl
@@ -130,7 +130,7 @@ behaviour_info(_Other) ->
 # OTP
 ## Behaviors. Usage
 
-Now, when we have our first behaviour, let's try to use it and see what happens if we fail to describe it correct. Let's create a file named `foo_module_step1.erl`
+Now, when we have our first behaviour, let's try to use it and see what happens if we fail to describe it correctly. Let's create a file named `foo_module_step1.erl`:
 
 ```erlang
 -module(foo_module_error).
@@ -164,7 +164,7 @@ Why this happened? We forgot to export functions so they are private and invisib
 # OTP
 ## Behaviors. Usage
 
-So, let's create second file named `foo_module_step2.erl`. It will look like this:
+So, let's create the second file named `foo_module_step2.erl`. It will look like this:
 
 ```erlang
 -module(foo_module_step2).
@@ -275,45 +275,45 @@ There is a list of OTP behaviors with short explanation.
 
 There is a list of OTP behaviors with short explanation.
 
-* `gen_server` - for implementing standard server from client-server relation
+* `gen_server` - a standard server in a client-server relationship
 ---
 # OTP
 ## OTP introduced behaviors
 
 There is a list of OTP behaviors with short explanation.
 
-* `gen_server` - for implementing standard server from client-server relation
-* `gen_fsm` - for finite state machines
+* `gen_server` - a standard server in a client-server relationship
+* `gen_fsm` - a finite state machine
 ---
 # OTP
 ## OTP introduced behaviors
 
 There is a list of OTP behaviors with short explanation.
 
-* `gen_server` - for implementing standard server from client-server relation
-* `gen_fsm` - for finite state machines
-* `gen_event` - for implementing event handling
+* `gen_server` - a standard server in a client-server relationship
+* `gen_fsm` - a finite state machine
+* `gen_event` - an event handler
 ---
 # OTP
 ## OTP introduced behaviors
 
 There is a list of OTP behaviors with short explanation.
 
-* `gen_server` - for implementing standard server from client-server relation
-* `gen_fsm` - for finite state machines
-* `gen_event` - for implementing event handling
-* `supervisor` - for implementing supervisors from supervisors tree
+* `gen_server` - a standard server in a client-server relationship
+* `gen_fsm` - a finite state machine
+* `gen_event` - an event handler
+* `supervisor` - a standalone supervisor or a supervisor tree
 ---
 # OTP
 ## OTP introduced behaviors
 
 There is a list of OTP behaviors with short explanation.
 
-* `gen_server` - for implementing standard server from client-server relation
-* `gen_fsm` - for finite state machines
-* `gen_event` - for implementing event handling
-* `supervisor` - for implementing supervisors from supervisors tree
-* `application` - for application callback module
+* `gen_server` - a standard server in a client-server relationship
+* `gen_fsm` - a finite state machine
+* `gen_event` - an event handler
+* `supervisor` - a standalone supervisor or a supervisor tree
+* `application` - an application callback module
 ---
 class: center,middle
 # End of Lecture 6
