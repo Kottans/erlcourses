@@ -30,7 +30,7 @@ What is application in OTP? It's a component that can be started and stopped as 
 
 What is application in OTP? It's a component that can be started and stopped as a stand-alone unit and which can be reused by other applications. Also it's a base module for building OTP application (it uses behaviour `application`).
 
-At second, application in OTP is, frankly speaking, a supervision tree. Application module launches first supervisor, supervisor launches other workers and supervisors. You can see supervision tree of application using Erlang observer. It usually launches as standalone node in same claster to avoid impact to target system. Let's try it:
+At second, application in OTP is, frankly speaking, a supervision tree. Application module launches first supervisor, supervisor launches other workers and supervisors. You can see supervision tree of application using Erlang observer. It usually launches as standalone node in same cluster to avoid impact to target system. Let's try it:
 
 ```
 1$> erl -sname node1 -setcookie secret
@@ -42,7 +42,7 @@ At second, application in OTP is, frankly speaking, a supervision tree. Applicat
 
 What is application in OTP? It's a component that can be started and stopped as a stand-alone unit and which can be reused by other applications. Also it's a base module for building OTP application (it uses behaviour `application`).
 
-At second, application in OTP is, frankly speaking, a supervision tree. Application module launches first supervisor, supervisor launches other workers and supervisors. You can see supervision tree of application using Erlang observer. It usually launches as standalone node in same claster to avoid impact to target system. Let's try it:
+At second, application in OTP is, frankly speaking, a supervision tree. Application module launches first supervisor, supervisor launches other workers and supervisors. You can see supervision tree of application using Erlang observer. It usually launches as standalone node in same cluster to avoid impact to target system. Let's try it:
 
 ```
 1$> erl -sname node1 -setcookie secret
@@ -222,12 +222,12 @@ start_it_old(Tag, From, Type, ApplData) ->
 # OTP
 ## Application structure
 
-Ah ok. So we need to return tuple with `{ok, PID}` or `{ok, PID, AppState}`. The simpliest solution will be to return PID. But which process we need to launch? So, let's come back to supervisor and their trees.
+Ah ok. So we need to return tuple with `{ok, PID}` or `{ok, PID, AppState}`. The simplest solution will be to return PID. But which process we need to launch? So, let's come back to supervisors and their trees.
 ---
 # OTP
 ## Application structure
 
-Ah ok. So we need to return tuple with `{ok, PID}` or `{ok, PID, AppState}`. The simpliest solution will be to return PID. But which process we need to launch? So, let's come back to supervisor and their trees.
+Ah ok. So we need to return tuple with `{ok, PID}` or `{ok, PID, AppState}`. The simplest solution will be to return PID. But which process we need to launch? So, let's come back to supervisors and their trees.
 
 As you remember from previous explanations, application launches master, or root, supervisor which is needed to run all other processes within our applications. Let's go deeper with supervisor and how it works.
 ---
@@ -330,7 +330,7 @@ Let's take a closer look on supervisor child specification params:
 * `start` - defines a function call used to start the child process. It must return `{ok, Pid}` with PID of child, or `{ok, Pid, State}`, but this State is ignored by supervisor.
 * `restart` - defines a strategy of children relaunch. `permanent` will always be restarted, `temporary` will never be restarted and `transient` will restart if exit signal of child differs from `normal`, `shutdown` or `{shutdown, Term}`.
 * `shutdown` - defines how child process will be terminated. You can pass `brutal_kill` or integer `timeout` here. In case of `brutal_kill` supervisor will just terminate child using `exit(Child, kill)` signal, and in case of timeout we'll send `exit(Child, shutdown)` and await for answer first, but finish with `exit(Child,kill)` if timeout has been reached.
-* `type` specifies if child process is supervisor or worker.
+* `type` - specifies if child process is supervisor or worker.
 ---
 # OTP
 ## Supervisor
