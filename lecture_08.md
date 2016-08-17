@@ -20,113 +20,113 @@ class: center
 ---
 # `gen_server` behaviour
 
-For which purpose server is used? First than all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which used when we need to share some resource. Now it's a time to take a look on `gen_server` callbacks.
+For which purpose server is used? First of all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which is used when we need to share some resource. Now it's a time to take a look at `gen_server` callbacks.
 ---
 # `gen_server` behaviour
 
-For which purpose server is used? First than all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which used when we need to share some resource. Now it's a time to take a look on `gen_server` callbacks.
+For which purpose server is used? First of all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which is used when we need to share some resource. Now it's a time to take a look at `gen_server` callbacks.
 
 * `init/1` - special callback to initialize module using `gen_server`.
 ---
 # `gen_server` behaviour
 
-For which purpose server is used? First than all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which used when we need to share some resource. Now it's a time to take a look on `gen_server` callbacks.
-
-* `init/1` - special callback to initialize module using `gen_server`.
-* `handle_call/3` - callback to handle synchronous calls (for calls which need to return result to client)
----
-# `gen_server` behaviour
-
-For which purpose server is used? First than all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which used when we need to share some resource. Now it's a time to take a look on `gen_server` callbacks.
+For which purpose server is used? First of all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which is used when we need to share some resource. Now it's a time to take a look at `gen_server` callbacks.
 
 * `init/1` - special callback to initialize module using `gen_server`.
 * `handle_call/3` - callback to handle synchronous calls (for calls which need to return result to client)
-* `handle_cast/2` - callback to handle asynchronous casts (for requests which don't need to return any result)
 ---
 # `gen_server` behaviour
 
-For which purpose server is used? First than all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which used when we need to share some resource. Now it's a time to take a look on `gen_server` callbacks.
+For which purpose server is used? First of all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which is used when we need to share some resource. Now it's a time to take a look at `gen_server` callbacks.
 
 * `init/1` - special callback to initialize module using `gen_server`.
 * `handle_call/3` - callback to handle synchronous calls (for calls which need to return result to client)
 * `handle_cast/2` - callback to handle asynchronous casts (for requests which don't need to return any result)
-* `handle_info/2` - callback to handle all other requests. If server receives request other than call or cast - it is handled here
 ---
 # `gen_server` behaviour
 
-For which purpose server is used? First than all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which used when we need to share some resource. Now it's a time to take a look on `gen_server` callbacks.
+For which purpose server is used? First of all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which is used when we need to share some resource. Now it's a time to take a look at `gen_server` callbacks.
 
 * `init/1` - special callback to initialize module using `gen_server`.
 * `handle_call/3` - callback to handle synchronous calls (for calls which need to return result to client)
 * `handle_cast/2` - callback to handle asynchronous casts (for requests which don't need to return any result)
 * `handle_info/2` - callback to handle all other requests. If server receives request other than call or cast - it is handled here
-* `terminate/2` - callback which called when your server need to be stopped. All cleanups are performed here
 ---
 # `gen_server` behaviour
 
-For which purpose server is used? First than all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which used when we need to share some resource. Now it's a time to take a look on `gen_server` callbacks.
+For which purpose server is used? First of all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which is used when we need to share some resource. Now it's a time to take a look at `gen_server` callbacks.
 
 * `init/1` - special callback to initialize module using `gen_server`.
 * `handle_call/3` - callback to handle synchronous calls (for calls which need to return result to client)
 * `handle_cast/2` - callback to handle asynchronous casts (for requests which don't need to return any result)
 * `handle_info/2` - callback to handle all other requests. If server receives request other than call or cast - it is handled here
-* `terminate/2` - callback which called when your server need to be stopped. All cleanups are performed here
-* `code_change/3` - callback which called when you update your code in realtime. All state migrations go here
+* `terminate/2` - callback which called when your server needs to be stopped. All cleanups are performed here
 ---
 # `gen_server` behaviour
 
-And now let's take a look how does full flow look like.
+For which purpose server is used? First of all client-server relationship is about sharing resources. So, `gen_server` behaviour is a special behaviour which is used when we need to share some resource. Now it's a time to take a look at `gen_server` callbacks.
+
+* `init/1` - special callback to initialize module using `gen_server`.
+* `handle_call/3` - callback to handle synchronous calls (for calls which need to return result to client)
+* `handle_cast/2` - callback to handle asynchronous casts (for requests which don't need to return any result)
+* `handle_info/2` - callback to handle all other requests. If server receives request other than call or cast - it is handled here
+* `terminate/2` - callback which called when your server needs to be stopped. All cleanups are performed here
+* `code_change/3` - callback which called when you update your code in real-time. All state migrations go here
 ---
 # `gen_server` behaviour
 
-And now let's take a look how does full flow look like.
-
-* First than all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
+And now let's take a look at how does the full flow look like.
 ---
 # `gen_server` behaviour
 
-And now let's take a look how does full flow look like.
+And now let's take a look at how does the full flow look like.
 
-* First than all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
+* First of all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
+---
+# `gen_server` behaviour
+
+And now let's take a look at how does the full flow look like.
+
+* First of all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
 * After that, `gen_server:start_link` prepares and creates `gen_server` process as a part of supervision tree. It awaits for next function call to complete.
 ---
 # `gen_server` behaviour
 
-And now let's take a look how does full flow look like.
+And now let's take a look at how does the full flow look like.
 
-* First than all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
-* After that, `gen_server:start_link` prepares and creates `gen_server` process as a part of supervision tree. It awaits for next function call to complete.
-* `?MODULE:init/1` is called by `gen_server:start_link` and returns `{ok, State}` or `{ok, State, Timeout}` or `{ok, State, hibernate}` or `{stop,Reason}`. If timeout is passed, our server will receive `timeout` message each `Timeout` amount of milliseconds. `{ok,State}` is equal to `{ok,State,infinity}`. If `hibernate` atom is passed, `gen_server` will hibernate our target server - this will reduce amount of memory used and number of reductions scheduled for process.
----
-# `gen_server` behaviour
-
-And now let's take a look how does full flow look like.
-
-* First than all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
-* After that, `gen_server:start_link` prepares and creates `gen_server` process as a part of supervision tree. It awaits for next function call to complete.
-* `?MODULE:init/1` is called by `gen_server:start_link` and returns `{ok, State}` or `{ok, State, Timeout}` or `{ok, State, hibernate}` or `{stop,Reason}`. If timeout is passed, our server will receive `timeout` message each `Timeout` amount of milliseconds. `{ok,State}` is equal to `{ok,State,infinity}`. If `hibernate` atom is passed, `gen_server` will hibernate our target server - this will reduce amount of memory used and number of reductions scheduled for process.
-* At time of call, `gen_server:call` or `gen_server:multi_call` take care of call and calls final handler `?MODULE:handle_call/3`. Result can be `{reply,Reply,NewState}`, `{reply,Reply,NewState,Timeout}` or `{reply,Reply,NewState,hibernate}`. `Reply` is forwarded to initial caller, and `Timeout` and `hibernate` operate as in `?MODULE:init/1`. If function returns `{noreply,NewState}`, `{noreply,NewState,Timeout}` or `{noreply,NewState,hibernate}` - `gen_server` will just continue it's execution without sending any answer with `NewState`. Any reply need to be given explicitly using `gen_server:reply/2`. The last option is to reply with `{stop,Reason,Reply,NewState}` or `{stop,Reason,NewState}` - it will initiate `?MODULE:terminate/2`.
----
-# `gen_server` behaviour
-
-And now let's take a look how does full flow look like.
-
-* First than all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
+* First of all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
 * After that, `gen_server:start_link` prepares and creates `gen_server` process as a part of supervision tree. It awaits for next function call to complete.
 * `?MODULE:init/1` is called by `gen_server:start_link` and returns `{ok, State}` or `{ok, State, Timeout}` or `{ok, State, hibernate}` or `{stop,Reason}`. If timeout is passed, our server will receive `timeout` message each `Timeout` amount of milliseconds. `{ok,State}` is equal to `{ok,State,infinity}`. If `hibernate` atom is passed, `gen_server` will hibernate our target server - this will reduce amount of memory used and number of reductions scheduled for process.
-* At time of call, `gen_server:call` or `gen_server:multi_call` take care of call and calls final handler `?MODULE:handle_call/3`. Result can be `{reply,Reply,NewState}`, `{reply,Reply,NewState,Timeout}` or `{reply,Reply,NewState,hibernate}`. `Reply` is forwarded to initial caller, and `Timeout` and `hibernate` operate as in `?MODULE:init/1`. If function returns `{noreply,NewState}`, `{noreply,NewState,Timeout}` or `{noreply,NewState,hibernate}` - `gen_server` will just continue it's execution without sending any answer with `NewState`. Any reply need to be given explicitly using `gen_server:reply/2`. The last option is to reply with `{stop,Reason,Reply,NewState}` or `{stop,Reason,NewState}` - it will initiate `?MODULE:terminate/2`.
+---
+# `gen_server` behaviour
+
+And now let's take a look at how does the full flow look like.
+
+* First of all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
+* After that, `gen_server:start_link` prepares and creates `gen_server` process as a part of supervision tree. It awaits for next function call to complete.
+* `?MODULE:init/1` is called by `gen_server:start_link` and returns `{ok, State}` or `{ok, State, Timeout}` or `{ok, State, hibernate}` or `{stop,Reason}`. If timeout is passed, our server will receive `timeout` message each `Timeout` amount of milliseconds. `{ok,State}` is equal to `{ok,State,infinity}`. If `hibernate` atom is passed, `gen_server` will hibernate our target server - this will reduce amount of memory used and number of reductions scheduled for process.
+* At time of call, `gen_server:call` or `gen_server:multi_call` takes care of call and calls the final handler `?MODULE:handle_call/3`. Result can be `{reply,Reply,NewState}`, `{reply,Reply,NewState,Timeout}` or `{reply,Reply,NewState,hibernate}`. `Reply` is forwarded to initial caller, and `Timeout` and `hibernate` operate as in `?MODULE:init/1`. If function returns `{noreply,NewState}`, `{noreply,NewState,Timeout}` or `{noreply,NewState,hibernate}` - `gen_server` will just continue its execution without sending any answer with `NewState`. Any reply needs to be given explicitly using `gen_server:reply/2`. The last option is to reply with `{stop,Reason,Reply,NewState}` or `{stop,Reason,NewState}` - it will initiate `?MODULE:terminate/2`.
+---
+# `gen_server` behaviour
+
+And now let's take a look at how does the full flow look like.
+
+* First of all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
+* After that, `gen_server:start_link` prepares and creates `gen_server` process as a part of supervision tree. It awaits for next function call to complete.
+* `?MODULE:init/1` is called by `gen_server:start_link` and returns `{ok, State}` or `{ok, State, Timeout}` or `{ok, State, hibernate}` or `{stop,Reason}`. If timeout is passed, our server will receive `timeout` message each `Timeout` amount of milliseconds. `{ok,State}` is equal to `{ok,State,infinity}`. If `hibernate` atom is passed, `gen_server` will hibernate our target server - this will reduce amount of memory used and number of reductions scheduled for process.
+* At time of call, `gen_server:call` or `gen_server:multi_call` takes care of call and calls the final handler `?MODULE:handle_call/3`. Result can be `{reply,Reply,NewState}`, `{reply,Reply,NewState,Timeout}` or `{reply,Reply,NewState,hibernate}`. `Reply` is forwarded to initial caller, and `Timeout` and `hibernate` operate as in `?MODULE:init/1`. If function returns `{noreply,NewState}`, `{noreply,NewState,Timeout}` or `{noreply,NewState,hibernate}` - `gen_server` will just continue its execution without sending any answer with `NewState`. Any reply needs to be given explicitly using `gen_server:reply/2`. The last option is to reply with `{stop,Reason,Reply,NewState}` or `{stop,Reason,NewState}` - it will initiate `?MODULE:terminate/2`.
 * The same is actual for `gen_server:cast` or `gen_server:abcast`. Result can be only tuples with `noreply` or `stop` atom.
 ---
 # `gen_server` behaviour
 
-And now let's take a look how does full flow look like.
+And now let's take a look at how does the full flow look like.
 
-* First than all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
+* First of all, `gen_server:start` is called. It contains lightweight initialization clauses needed for real server start.
 * After that, `gen_server:start_link` prepares and creates `gen_server` process as a part of supervision tree. It awaits for next function call to complete.
 * `?MODULE:init/1` is called by `gen_server:start_link` and returns `{ok, State}` or `{ok, State, Timeout}` or `{ok, State, hibernate}` or `{stop,Reason}`. If timeout is passed, our server will receive `timeout` message each `Timeout` amount of milliseconds. `{ok,State}` is equal to `{ok,State,infinity}`. If `hibernate` atom is passed, `gen_server` will hibernate our target server - this will reduce amount of memory used and number of reductions scheduled for process.
-* At time of call, `gen_server:call` or `gen_server:multi_call` take care of call and calls final handler `?MODULE:handle_call/3`. Result can be `{reply,Reply,NewState}`, `{reply,Reply,NewState,Timeout}` or `{reply,Reply,NewState,hibernate}`. `Reply` is forwarded to initial caller, and `Timeout` and `hibernate` operate as in `?MODULE:init/1`. If function returns `{noreply,NewState}`, `{noreply,NewState,Timeout}` or `{noreply,NewState,hibernate}` - `gen_server` will just continue it's execution without sending any answer with `NewState`. Any reply need to be given explicitly using `gen_server:reply/2`. The last option is to reply with `{stop,Reason,Reply,NewState}` or `{stop,Reason,NewState}` - it will initiate `?MODULE:terminate/2`.
+* At time of call, `gen_server:call` or `gen_server:multi_call` takes care of call and calls the final handler `?MODULE:handle_call/3`. Result can be `{reply,Reply,NewState}`, `{reply,Reply,NewState,Timeout}` or `{reply,Reply,NewState,hibernate}`. `Reply` is forwarded to initial caller, and `Timeout` and `hibernate` operate as in `?MODULE:init/1`. If function returns `{noreply,NewState}`, `{noreply,NewState,Timeout}` or `{noreply,NewState,hibernate}` - `gen_server` will just continue its execution without sending any answer with `NewState`. Any reply needs to be given explicitly using `gen_server:reply/2`. The last option is to reply with `{stop,Reason,Reply,NewState}` or `{stop,Reason,NewState}` - it will initiate `?MODULE:terminate/2`.
 * The same is actual for `gen_server:cast` or `gen_server:abcast`. Result can be only tuples with `noreply` or `stop` atom.
-* And `?MODULE:handle_info` is used for all other messages, not cast nor call (for example, exit messages).
+* And `?MODULE:handle_info` is used for all other messages, nor cast, neither call (for example, exit messages).
 ---
 # `gen_server` behaviour
 
@@ -247,13 +247,13 @@ button(Digit) ->
 
 init(Code) ->
     {ok, locked, {[], Code}}.
-% part 2 goes on next page
+% part 2 goes on the next page
 ```
 ---
 # `gen_fsm` behaviour
 
 ```erlang
-% page 1 goes on previous page
+% part 1 goes on the previous page
 locked({button, Digit}, {SoFar, Code}) ->
     case [Digit|SoFar] of
         Code ->
@@ -274,7 +274,7 @@ open(timeout, State) ->
 
 Your HW Part 2 will be to create table with differences between implementations of `gen_fsm` and `gen_server`.
 
-And third part of homework will be the largest one:
+And the third part of homework will be the largest one:
 
 Create application `app_3`, which allows us to use some key-value storage backed by `gen_server` implementation. This implementation need to have API calls `set/2` and `get/1`.
 
