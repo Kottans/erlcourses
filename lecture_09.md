@@ -498,7 +498,7 @@ And now macros that simplifies testing itself.
 
 * `assert(Bool)` - evaluates boolean expression `Bool`. Can be used anywhere in program
 * `assertNot(Bool)` - equivalent to `assert(not(Bool))`
-* `assertMatch(GuardedPattern, Expr)` - evaluates `Expr` and matches against `GuardedPattern`. This macro has inversed version `assertNotMatch`
+* `assertMatch(GuardedPattern, Expr)` - evaluates `Expr` and matches against `GuardedPattern`. This macro has an inverted version `assertNotMatch`
 ---
 # EUnit
 ## EUnit assert macros
@@ -507,8 +507,8 @@ And now macros that simplifies testing itself.
 
 * `assert(Bool)` - evaluates boolean expression `Bool`. Can be used anywhere in program
 * `assertNot(Bool)` - equivalent to `assert(not(Bool))`
-* `assertMatch(GuardedPattern, Expr)` - evaluates `Expr` and matches against `GuardedPattern`. This macro has inversed version `assertNotMatch`
-* `assertEqual(Expect, Expr)` - evaluates `Expect` and `Expr` and compares them. More informative than `?assert(Expect =:= Expr)`. Has inversed version `assertNotEqual`
+* `assertMatch(GuardedPattern, Expr)` - evaluates `Expr` and matches against `GuardedPattern`. This macro has an inverted version `assertNotMatch`
+* `assertEqual(Expect, Expr)` - evaluates `Expect` and `Expr` and compares them. More informative than `?assert(Expect =:= Expr)`. Has an inverted version `assertNotEqual`
 ---
 # EUnit
 ## EUnit equal forms
@@ -533,7 +533,7 @@ in function fib:'-fib_test_/0-fun-14-'/0 (fib.erl, line 19)
 ---
 # Homework
 
-Please rewrite our Fibonacci calculator tests to one test function usign `?_assert` form.
+Please rewrite our Fibonacci calculator tests to one test function using `?_assert` form.
 ---
 class: center,middle
 # End of Lecture 9
